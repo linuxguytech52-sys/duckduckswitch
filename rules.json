@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "https://duckduckgo.com/?q={searchTerms}"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://www.google.com/search*",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "https://duckduckgo.com/html/?q={searchTerms}"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://*.google.com/search*",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "https://duckduckgo.com/?q={searchTerms}"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://www.google.com/search?*",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "https://duckduckgo.com/html/?q={searchTerms}"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://*.google.com/search?*",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "https://duckduckgo.com/?q={searchTerms}"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://encrypted.google.com/search*",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "https://duckduckgo.com/html/?q={searchTerms}"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://*.google.com/search?*q=*",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "https://duckduckgo.com/html/?q={searchTerms}"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://*.google.com/search?*oq=*",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 8,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "https://duckduckgo.com/html/?q={searchTerms}"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://*.google.com/search?*as_q=*",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]

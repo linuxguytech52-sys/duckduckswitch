@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Google to DuckDuckGo Redirector",
+  "version": "1.0.0",
+  "description": "Automatically redirects Google searches to DuckDuckGo",
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": ["*://*.google.com/*"],
+  "icons": {
+    "16": "icons/icon16.svg",
+    "32": "icons/icon32.svg",
+    "48": "icons/icon48.svg",
+    "128": "icons/icon128.svg"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.svg",
+      "32": "icons/icon32.svg",
+      "48": "icons/icon48.svg",
+      "128": "icons/icon128.svg"
+    }
+  },
+  "options_page": "options.html"
+}
