@@ -11,7 +11,9 @@ A Chrome extension that automatically redirects Google searches to DuckDuckGo fo
 
 ## Installation
 
-### Method 1: Load Unpacked (Development)
+### Chrome / Chromium
+
+#### Method 1: Load Unpacked (Development)
 
 1. Download or clone this extension
 2. Open Chrome and navigate to `chrome://extensions/`
@@ -19,13 +21,23 @@ A Chrome extension that automatically redirects Google searches to DuckDuckGo fo
 4. Click "Load unpacked"
 5. Select the extension folder
 
-### Method 2: Pack as .crx
+#### Method 2: Pack as .crx
 
 1. Open Chrome and navigate to `chrome://extensions/`
 2. Enable "Developer mode"
 3. Click "Pack extension"
 4. Select the extension folder
 5. Install the generated `.crx` file
+
+### Firefox
+
+1. Download or clone this extension
+2. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`
+3. Click "Load Temporary Add-on…"
+4. Select `manifest-firefox.json` from the extension folder
+5. The extension will load and redirect Google searches to DuckDuckGo
+
+> **Note:** For a permanent Firefox installation, you can package the extension as an `.xpi` file or submit it to [Mozilla Add-ons (AMO)](https://addons.mozilla.org/). To package: `zip -r duckduckswitch.xpi * -x "*.git*" ".*"` using `manifest-firefox.json` as the manifest.
 
 ## Usage
 
