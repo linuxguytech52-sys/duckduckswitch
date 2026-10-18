@@ -31,13 +31,23 @@ A Chrome extension that automatically redirects Google searches to DuckDuckGo fo
 
 ### Firefox
 
+#### Load temporarily (development)
+
 1. Download or clone this extension
 2. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`
 3. Click "Load Temporary Add-on…"
-4. Select `manifest-firefox.json` from the extension folder
+4. Select `Firefox/manifest.json` from the extension folder
 5. The extension will load and redirect Google searches to DuckDuckGo
 
-> **Note:** For a permanent Firefox installation, you can package the extension as an `.xpi` file or submit it to [Mozilla Add-ons (AMO)](https://addons.mozilla.org/). To package: `zip -r duckduckswitch.xpi * -x "*.git*" ".*"` using `manifest-firefox.json` as the manifest.
+#### Install the packaged .xpi
+
+1. Download or clone this extension
+2. Open Firefox and navigate to `about:addons`
+3. Click the gear icon (⚙️) in the top-right and choose "Install Add-on From File…"
+4. Select `Firefox/duckduckswitch.xpi`
+5. Confirm the installation; the extension will redirect Google searches to DuckDuckGo
+
+> **Note:** The packaged `.xpi` lives in the `Firefox/` folder and is built from the files in that folder. To rebuild it: `cd Firefox && zip -r duckduckswitch.xpi . -x '*.DS_Store'`
 
 ## Usage
 

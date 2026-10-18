@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google to DuckDuckGo Redirector - Options</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #1a1a2e;
+            color: white;
+        }
+        h1 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #4cc9f0;
+        }
+        .option {
+            background: #252540;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .option label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        .option p {
+            font-size: 12px;
+            color: #a0a0a0;
+            margin: 0;
+        }
+        input[type="checkbox"] {
+            transform: scale(1.2);
+            margin-right: 8px;
+        }
+        .save-btn {
+            background: #de5833;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        .save-btn:hover {
+            background: #c94d2a;
+        }
+        .info {
+            background: #1e3a5f;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #a0d2db;
+        }
+    </style>
+</head>
+<body>
+    <h1>Google → DuckDuckGo Redirector</h1>
+    
+    <div class="option">
+        <label>
+            <input type="checkbox" id="enableRedirect" checked>
+            Enable automatic redirects
+        </label>
+        <p>When enabled, Google searches will automatically redirect to DuckDuckGo.</p>
+    </div>
+
+    <div class="option">
+        <label>
+            <input type="checkbox" id="useHtmlVersion" checked>
+            Use DuckDuckGo HTML version
+        </label>
+        <p>HTML version is more lightweight and privacy-focused. Regular version has more features.</p>
+    </div>
+
+    <div class="option">
+        <label>
+            <input type="checkbox" id="redirectGoogleImages" checked>
+            Redirect Google Images
+        </label>
+        <p>Also redirect image searches from Google to DuckDuckGo.</p>
+    </div>
+
+    <div class="option">
+        <label>
+            <input type="checkbox" id="redirectGoogleNews" checked>
+            Redirect Google News
+        </label>
+        <p>Also redirect news searches from Google to DuckDuckGo.</p>
+    </div>
+
+    <button class="save-btn" id="saveBtn">Save Settings</button>
+
+    <div class="info">
+        <strong>Note:</strong> Google redirects are handled at the browser level using the browser's native request interception API. Changes take effect immediately.
+    </div>
+
+    <script src="options.js"></script>
+</body>
+</html>
